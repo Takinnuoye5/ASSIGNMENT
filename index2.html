@@ -1,298 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Unlock your potential with ALT School Africa- Sign up now!</title>
-    <link
-      rel="shortcut icon"
-      href="./assets/images/alt.png"
-      type="image/x-icon"
-    />
-    <script src="./test.js"></script>
-    <style>
-      .nav-link {
-        text-decoration: none;
-        color: blue;
-      }
-      @media (max-width: 575px) {
-        .button-form {
-          padding: 10px 0px;
-          padding-left: 0px;
-          padding-bottom: 10px;
-          padding-right: 0px;
-          padding-top: 10px;
-          font-size: 0.8em;
-        }
-      }
-      .button-form {
-        background-color: rgb(106, 111, 245); /* Green */
-        border: none;
-        color: white;
-        padding: 12px 0px;
 
-        cursor: pointer;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unlock your potential with ALT School Africa- Sign up now!</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="form.css">
+  <link rel="shortcut icon" href="./assets/images/alt.png" type="image/x-icon" />
+</head>
 
-        width: 50%;
-        display: flex;
-        align-items: center;
-        border-radius: 4px;
-        -webkit-box-align: center;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        -webkit-box-pack: center;
-        justify-content: center;
-        transition: all 0.3s ease-in-out 0s;
-      }
-      .form-main {
-        box-sizing: border-box;
-        font-size: 14px;
-        list-style: none;
-        line-height: 1.5714285714285714;
-        margin: 0;
-        padding: 0;
-        color: rgba(0, 0, 0, 0.88);
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-          sans-serif;
-      }
-      body {
-        color: rgb(15, 15, 25);
-        font-size: 16px;
-        overflow-x: hidden;
-        scroll-behavior: smooth;
-      }
-      .sr-only {
-        position: absolute;
-        left: -10000px;
-        top: auto;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-      }
-      .sr-only:focus {
-        position: static;
-        width: auto;
-        height: auto;
-        overflow: visible;
-      }
-    </style>
-    
-  </head>
-  <body>
-    <a href="#main-content" class="sr-only" id="skip-link">Skip to main content</a><br />
-    <script>
-      document.getElementById('skip-link').addEventListener('click',function (e) {e.preventDefault();
-      document.getElementById('main-content').tabIndex= -1;
-      document.getElementById('main-content').focus();
-      });
-      
-      
-    </script>
-    <main id="main-content">
-      <header>
-        <nav class="nav-container" global nav>
-          <a class="nav-link" href="./index.html">About Me</a>
-          <a class="nav-link" href="https://altschoolafrica.com/#"
-            >Contact us</a>
-        </nav>
-        <p></p>
-        <h1 class="main-h"></h1>
-      </header>
-      <img src="./assets/images/alt.png" width="70px" alt="alt school logo" />
-      <h2 class="app-header">Application Form</h2>
+<body>
+    <div id="left-column">
+      <a href="https://altschoolafrica.com" rel="noreferrer"><svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.835 21.207h-5.413L7.61 36.222h2.9l1.332-4.124h6.66l1.396 4.124h2.9l-4.962-15.015Zm-5.22 8.506 2.514-7.755 2.578 7.755h-5.091Zm14.152 6.53V21.208h-2.664v15.037h2.663Zm5.871-11.084v-3.952h-2.663v3.952h-1.611v2.084h.257s1.354 0 1.354 1.482v4.79a2.718 2.718 0 0 0 2.728 2.729h1.826V33.88h-1.053a.853.853 0 0 1-.838-.838v-4.124c0-1.59-3.372-1.676-3.93-1.676h5.82v-2.084h-1.89ZM16.074 47.945s-2.879-.666-2.964-.687c-.967-.258-1.783-.73-1.783-1.719 0-1.074 1.31-1.955 2.964-1.955 2.02 0 3.158 1.246 3.158 2.47h2.814c0-2.62-2.04-4.833-5.972-4.833-3.33 0-5.778 1.783-5.778 4.34 0 2.642 1.675 3.91 4.124 4.468 0 0 2.9.666 2.964.687 1.117.28 2.041.838 2.041 1.934 0 1.353-1.675 2.212-3.437 2.062-2.384-.194-3.265-1.762-3.265-2.879H8.147c0 2.45 2.041 5.156 6.101 5.263 3.05.065 6.208-1.61 6.208-4.446 0-2.621-1.804-4.082-4.382-4.705Zm11.227 6.638c-1.697 0-2.599-1.611-2.599-3.459 0-1.869 1.117-3.458 2.578-3.458 1.16 0 2.083.86 2.406 2.04h2.878c-.472-2.77-2.685-4.403-5.306-4.403-2.943 0-5.499 2.578-5.348 6.165.128 3.351 2.534 5.456 5.413 5.456 2.685 0 4.683-1.782 5.198-4.21h-2.964c-.236.967-1.096 1.869-2.256 1.869Zm9.745-4.425v.064-.064Zm3.05-4.812c-1.632.129-3.029 1.826-3.05 4.812.021-1.483.687-2.556 2.212-2.556 1.676 0 2.213 1.245 2.213 2.62v6.466h2.685V49.32c0-2.578-2.127-4.124-4.06-3.974Zm-5.714-3.695v15.037h2.664V41.651h-2.664Zm17.004 3.652c-2.857 0-5.478 2.127-5.478 5.821 0 3.695 2.578 5.779 5.478 5.8 2.921-.021 5.5-2.126 5.5-5.8 0-3.694-2.643-5.821-5.5-5.821Zm0 9.259c-1.418 0-2.793-1.118-2.793-3.438 0-2.19 1.354-3.437 2.793-3.458 1.46.021 2.814 1.289 2.814 3.458 0 2.32-1.375 3.438-2.814 3.438Zm12.377-9.26c-2.857 0-5.478 2.128-5.478 5.822 0 3.695 2.578 5.779 5.478 5.8 2.922-.021 5.5-2.126 5.5-5.8 0-3.694-2.643-5.821-5.5-5.821Zm0 9.26c-1.418 0-2.792-1.118-2.792-3.438 0-2.19 1.353-3.437 2.792-3.458 1.46.021 2.814 1.289 2.814 3.458 0 2.32-1.375 3.438-2.814 3.438Zm10.057 2.126V41.651h-2.664v15.037h2.664ZM73.852 32.963H37.407v3.26h36.445v-3.26Z" fill="#000"></path></svg></a>
+        <div>
+          <h1 class="style_heroText__z_Ejv">Learn highly sought <br> after skills <br> without hassle.</h1>
+          <p class="style_subHeroText__eGdz6">Earn a Diploma in highly-sought after skills.</p>
 
-      <p>Fill in your details</p>
-      <form
-        class="form-main"
-        id="myForm"
-        action="https://altschoolafrica.com"
-        method="post"
-      >
-        <div style="display: flex">
-          <div class="leftside">
-            <label for="first name"
-              >First Name*
-              <br />
-              <input
-                type="text"
-                name="first name"
-                id="first name"
-                placeholder="Enter your first name"
-                required
-              /> </label
-            ><br /><br />
-            <label for="Gender"
-              >Gender* <br />
-              <select required>
-                <option disabled selected value>Select your Gender</option>
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-              </select> </label
-            ><br /><br />
-            <label for="Email"
-              >Email*
-              <br />
-              <input
-                type="email"
-                name="email"
-                id="Email"
-                placeholder="Enter your email"
-                required
-              /> </label
-            ><br /><br />
-            <label for="Country"
-              >Country* <br />
-              <select>
-                <option disabled selected value>Choose a Country</option>
-                <option value="Kenya">Kenya</option>
-                <option value="Nigeria">Nigeria</option>
-                <option value="Egypt">Egypt</option>
-                <option value="USA">USA</option>
-                <option value="UK">UK</option>
-                <option value="Other">Other</option>
-              </select> </label
-            ><br /><br />
-            <label for="Employment Status"
-              >Employment Status* <br />
-              <select>
-                <option disabled selected value>
-                  Select Employment status
-                </option>
-                <option value="employed">employed</option>
-                <option value="un-employed">un-employed</option>
-                <option value="self-employed">self-employed</option>
-              </select> </label
-            ><br /><br />
-            <label for="Choose School"
-              >Choose School* <br />
-              <select>
-                <option disabled selected value aria-required="true">
-                  Select School
-                </option>
-                <option value="School of engineering">
-                  School of engineering
-                </option>
-                <option value="School of data">School of data</option>
-                <option value="School of creative economy">
-                  School of creative economy
-                </option>
-                <option value="School of Business">School of Business</option>
-              </select> </label
-            ><br /><br />
-            <label for="How did you hear about us?">
-              How did you hear about us?*<br />
-              <select>
-                <option disabled selected value>Select Channel</option>
-                <option value="Youtube">Youtube</option>
-                <option value="Facebook">Facebook</option>
-                <option value="Twitter">Twitter</option>
-                <option value="Instagram">Instagram</option>
-                <option value="Linkedin">Linkedin</option>
-                <option value="Google Search">Google Search</option>
-                <option value="Others">Others</option>
-              </select>
-            </label>
-          </div>
+        </div>
+        <footer class="style_footer__k5RXX"><section class="style_socialWrapper__xPLMG"><a href="https://twitter.com/altschoolafrica"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M928 254.3c-30.6 13.2-63.9 22.7-98.2 26.4a170.1 170.1 0 0 0 75-94 336.64 336.64 0 0 1-108.2 41.2A170.1 170.1 0 0 0 672 174c-94.5 0-170.5 76.6-170.5 170.6 0 13.2 1.6 26.4 4.2 39.1-141.5-7.4-267.7-75-351.6-178.5a169.32 169.32 0 0 0-23.2 86.1c0 59.2 30.1 111.4 76 142.1a172 172 0 0 1-77.1-21.7v2.1c0 82.9 58.6 151.6 136.7 167.4a180.6 180.6 0 0 1-44.9 5.8c-11.1 0-21.6-1.1-32.2-2.6C211 652 273.9 701.1 348.8 702.7c-58.6 45.9-132 72.9-211.7 72.9-14.3 0-27.5-.5-41.2-2.1C171.5 822 261.2 850 357.8 850 671.4 850 843 590.2 843 364.7c0-7.4 0-14.8-.5-22.2 33.2-24.3 62.3-54.4 85.5-88.2z"></path></svg></a><a href="https://instagram.com/altschoolafrica"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M512 306.9c-113.5 0-205.1 91.6-205.1 205.1S398.5 717.1 512 717.1 717.1 625.5 717.1 512 625.5 306.9 512 306.9zm0 338.4c-73.4 0-133.3-59.9-133.3-133.3S438.6 378.7 512 378.7 645.3 438.6 645.3 512 585.4 645.3 512 645.3zm213.5-394.6c-26.5 0-47.9 21.4-47.9 47.9s21.4 47.9 47.9 47.9 47.9-21.3 47.9-47.9a47.84 47.84 0 0 0-47.9-47.9zM911.8 512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165zm-88 235.8c-7.3 18.2-16.1 31.8-30.2 45.8-14.1 14.1-27.6 22.9-45.8 30.2C695.2 844.7 570.3 840 512 840c-58.3 0-183.3 4.7-235.9-16.1-18.2-7.3-31.8-16.1-45.8-30.2-14.1-14.1-22.9-27.6-30.2-45.8C179.3 695.2 184 570.3 184 512c0-58.3-4.7-183.3 16.1-235.9 7.3-18.2 16.1-31.8 30.2-45.8s27.6-22.9 45.8-30.2C328.7 179.3 453.7 184 512 184s183.3-4.7 235.9 16.1c18.2 7.3 31.8 16.1 45.8 30.2 14.1 14.1 22.9 27.6 30.2 45.8C844.7 328.7 840 453.7 840 512c0 58.3 4.7 183.2-16.2 235.8z"></path></svg></a><a href="https://facebook.com/AltSchoolAfrica"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg></a><a href="https://linkedin.com/school/altschoolafrica"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg></a></section><span class="style_copyRight__CBMaF">©<!-- -->2023<!-- --> Akinnuoye Timothy. All rights reserved.</span></footer>
+    </div>
+    <div id="right-column">
+  <a href="#main-content" class="sr-only" id="skip-link">Skip to main content</a><br />
+  <main id="main-content">
+    <header>
+      <nav class="nav-container" global nav>
+        <a class="nav-link" href="./index.html">About Me</a>
+        <a class="nav-link" href="https://altschoolafrica.com/#">Contact us</a>
+      </nav>
+      <p></p>
+      <h1 id="main-h"></h1>
+    </header>
+    <img src="./assets/images/alt.png" width="70px" alt="alt school logo" />
+    <h2 class="app-header">Application Form</h2>
 
-          <div class="rightside">
-            <label for="last name"
-              >Last Name* <br />
-              <input class="my-input"
-                type="text"
-                id="last name"
-                placeholder="Enter your Last name"
-                required
-            /></label>
-            <br /><br />
-            <label for="date of birth"
-              >date of birth* <br />
-              <input type="date" id="date of birth" required /></label
-            ><br /><br />
-            <label for="Education Level"
-              >Education Level*
-              <br />
-              <select>
-                <option disabled selected value>
-                  Select Level of Education
-                </option>
-                <option value="high school">High School</option>
-                <option value="diploma">Diploma</option>
-                <option value="bachelor's degree">Bachelor's Degree</option>
-                <option value="master's degree">Master's Degree</option>
-                <option value="doctorate">Doctorate</option>
-              </select>
-            </label>
-            <br /><br />
-            <label for="State/City of Residence"
-              >State/City of Residence* <br />
-              <input
-                type="text"
-                id="State/City of Residence"
-                placeholder="Enter your State of Residence"
-                required
-              /> </label
-            ><br /><br />
-            <label for="Phone Number"
-              >Phone Number* <br />
-              <input
-                type="tel"
-                id="Phone Number"
-                name="Phone Number"
-                placeholder="08182115172"
-                required
-              /> </label
-            ><br /><br />
-            <label for="Choose course of study"
-              >Choose course of study* <br />
-              <select>
-                <option disabled selected value id="Choose course of study">
-                  Select Course
-                </option>
-                <option value="Frontend Engineering">
-                  Frontend Engineering
-                </option>
-                <option value="Backend Engineering">Backend Engineering</option>
-                <option value="Cloud Engineering">Cloud Engineering</option>
-              </select>
-            </label>
-            <br /><br />
-            <label for="Scholarship/Discount code"
-              >Scholarship/Discount code
-              <br />
-              <input
-                type="text"
-                id="Scholarship/Discount code"
-                autocomplete="postal-code"
-                placeholder="enter the scholarship code"
-                required
-            /></label>
-          </div>
+    <p>Fill in your details</p>
+    <form class="form-main" id="myForm" action="https://altschoolafrica.com" method="post">
+      <div style="display: flex">
+        <div class="leftside">
+          <label for="first name">First Name*
+            <br />
+            <input type="text" name="first name" id="first name" placeholder="Enter your first name" required />
+          </label><br /><br />
+          <label for="Gender">Gender* <br />
+            <select required>
+              <option disabled selected value>Select your Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select> </label><br /><br />
+          <label for="Email">Email*
+            <br />
+            <input type="email" name="email" id="Email" placeholder="Enter your email" required /> </label><br /><br />
+          <label for="Country">Country* <br />
+            <select>
+              <option disabled selected value>Choose a Country</option>
+              <option value="Kenya">Kenya</option>
+              <option value="Nigeria">Nigeria</option>
+              <option value="Egypt">Egypt</option>
+              <option value="USA">USA</option>
+              <option value="UK">UK</option>
+              <option value="Other">Other</option>
+            </select> </label><br /><br />
+          <label for="Employment Status">Employment Status* <br />
+            <select>
+              <option disabled selected value>
+                Select Employment status
+              </option>
+              <option value="employed">employed</option>
+              <option value="un-employed">un-employed</option>
+              <option value="self-employed">self-employed</option>
+            </select> </label><br /><br />
+          <label for="Choose School">Choose School* <br />
+            <select>
+              <option disabled selected value aria-required="true">
+                Select School
+              </option>
+              <option value="School of engineering">
+                School of engineering
+              </option>
+              <option value="School of data">School of data</option>
+              <option value="School of creative economy">
+                School of creative economy
+              </option>
+              <option value="School of Business">School of Business</option>
+            </select> </label><br /><br />
+          <label for="How did you hear about us?">
+            How did you hear about us?*<br />
+            <select>
+              <option disabled selected value>Select Channel</option>
+              <option value="Youtube">Youtube</option>
+              <option value="Facebook">Facebook</option>
+              <option value="Twitter">Twitter</option>
+              <option value="Instagram">Instagram</option>
+              <option value="Linkedin">Linkedin</option>
+              <option value="Google Search">Google Search</option>
+              <option value="Others">Others</option>
+            </select>
+          </label>
         </div>
 
-        <p>
-          By clicking continue, I agree to
-          <a class="nav-link" href="">Terms of Use</a> and acknowledge that I
-          have read the <a class="nav-link" href="">Privacy Policy</a>
-        </p>
-        <!-- Button trigger modal -->
-        <button id="my-button" type="submit" class="button-form">
-          <span> Proceed </span>
-        </button>
-        <p>
-          Already have an account?
-          <a href="https://portal.altschoolafrica.com/auth/login">Sign In.</a>
-        </p>
-      </form>
-      <footer class="footer-h">
-        <style>
-          .footer-h {
-            justify-content: center;
-            text-align: center;
-          }
-        </style>
-        Contact: akinnuoyet@gmail.com <br /><br />
-        © 2023 Akinnuoye Timothy Oluwaseun | All rights reserved.
-      </footer>
-    </main>
-  </body>
+        <div class="rightside">
+          <label for="last name">Last Name* <br />
+            <input class="my-input" type="text" id="last name" placeholder="Enter your Last name" required /></label>
+          <br /><br />
+          <label for="date of birth">date of birth* <br />
+            <input type="date" id="date of birth" required /></label><br /><br />
+          <label for="Education Level">Education Level*
+            <br />
+            <select>
+              <option disabled selected value>
+                Select Level of Education
+              </option>
+              <option value="high school">High School</option>
+              <option value="diploma">Diploma</option>
+              <option value="bachelor's degree">Bachelor's Degree</option>
+              <option value="master's degree">Master's Degree</option>
+              <option value="doctorate">Doctorate</option>
+            </select>
+          </label>
+          <br /><br />
+          <label for="State/City of Residence">State/City of Residence* <br />
+            <input type="text" id="State/City of Residence" placeholder="Enter your State of Residence" required />
+          </label><br /><br />
+          <label for="Phone Number">Phone Number* <br />
+            <input type="tel" id="Phone Number" name="Phone Number" placeholder="08182115172" required />
+          </label><br /><br />
+          <label for="Choose course of study">Choose course of study* <br />
+            <select>
+              <option disabled selected value id="Choose course of study">
+                Select Course
+              </option>
+              <option value="Frontend Engineering">
+                Frontend Engineering
+              </option>
+              <option value="Backend Engineering">Backend Engineering</option>
+              <option value="Cloud Engineering">Cloud Engineering</option>
+            </select>
+          </label>
+          <br /><br />
+          <label for="Scholarship/Discount code">Scholarship/Discount code
+            <br />
+            <input type="text" id="Scholarship/Discount code" autocomplete="postal-code"
+              placeholder="enter the scholarship code" required /></label>
+        </div>
+      </div>
+
+      <p>
+        By clicking continue, I agree to
+        <a class="nav-link" href="">Terms of Use</a> and acknowledge that I
+        have read the <a class="nav-link" href="">Privacy Policy</a>
+      </p>
+      <!-- Button trigger modal -->
+      <button id="my-button" type="submit" class="button-form">
+        <span> Proceed </span>
+      </button>
+      <p>
+        Already have an account?
+        <a href="https://portal.altschoolafrica.com/auth/login">Sign In.</a>
+      </p>
+    </form>
+    <footer class="footer-h">
+      <style>
+        .footer-h {
+          justify-content: center;
+          text-align: center;
+        }
+      </style>
+      Contact: akinnuoyet@gmail.com <br /><br />
+      © 2023 Akinnuoye Timothy Oluwaseun | All rights reserved.
+    </footer>
+  </main>
+  </div>
+</body>
+
 </html>

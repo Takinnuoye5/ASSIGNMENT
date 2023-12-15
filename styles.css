@@ -1,0 +1,61 @@
+
+@media (max-width: 768px) 
+{
+  body 
+  {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
+
+  .button-form {
+    padding: 10px 0px;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    padding-right: 0px;
+    padding-top: 10px;
+    font-size: 0.8em;
+  }
+
+#left-column {
+  max-width: 300px;
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-h {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#right-column {
+  flex: 2;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px;
+}
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.sr-only:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+}
